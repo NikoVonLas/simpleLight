@@ -34,8 +34,11 @@
 ### Прошивка
 Есть два варианта прошивки: из готовых и скомпилированных файлов и их исходников.
 #### Из скомпилированных .bin файлов
-~~Качаем последнюю версию [NodeMCU PyFlasher](https://github.com/marcelstoer/nodemcu-pyflasher/releases), для вашей платформы(windows, mac)~~
-Пока не понятно как, ибо прошивка из .bin файлов на текущий момент не завелась, в ближайшее время буду пробовать исправить.
+### NodeMCU Flasher
+~~Качаем последнюю версию [NodeMCU Flasher](https://github.com/nodemcu/nodemcu-flasher), для вашей платформы) и загружаем прошивку с данными настройками:~~
+![Scheme](https://raw.githubusercontent.com/NikoVonLas/simpleLight/master/README/flasher.png)
+
+По какой-то причини после прошивки таким образом устройство отказывается работать, разбираюсь в чём причина.
 #### Из исходников
 Скопировать библиотеки из папки src\libraries в рабочую папку arduino ide (обычно Документы\Arduino\libraries).
 
