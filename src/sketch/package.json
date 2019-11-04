@@ -1,0 +1,30 @@
+{
+  "name": "simplelight",
+  "version": "1.0.0",
+  "description": "Web config for SimpleLight ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikoVonLas/simpleLight.git"
+  },
+  "keywords": [
+    "Esp8266",
+    "IOT",
+    "Light"
+  ],
+  "author": "NikoVonLas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NikoVonLas/simpleLight/issues"
+  },
+  "homepage": "https://github.com/NikoVonLas/simpleLight#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.2"
+  }
+}

@@ -1,0 +1,248 @@
+html { 
+    height: 100%; 
+}
+
+body { 
+    min-height: calc(100% - 90px);
+    padding: 0; 
+    margin: 0; 
+    position: relative; 
+}
+
+body::after{ 
+    content: ''; 
+    display: block; 
+    height: 70px; 
+}
+
+.navigation {
+    background: #f4f5f6;
+    border-bottom: .1rem solid #d1d1d1;
+    display: block;
+    height: 5.2rem;
+    left: 0;
+    max-width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100
+}
+
+.navigation .container {
+    padding-bottom: 0;
+    padding-top: 0
+}
+
+.navigation .navigation-list {
+    list-style: none;
+    margin-bottom: 0;
+    margin-right: 5rem
+}
+
+@media(min-width: 80rem) {
+    .navigation .navigation-list {
+        margin-right:0
+    }
+}
+
+.navigation .navigation-item {
+    float: left;
+    margin-bottom: 0;
+    margin-left: 2.5rem;
+    position: relative
+}
+
+.navigation .img {
+    fill: #9b4dca;
+    height: 2rem;
+    position: relative;
+    top: .3rem
+}
+
+.navigation .navigation-title,.navigation .title {
+    color: #606c76;
+    font-family: Gotham Rounded A,Gotham Rounded B,Helvetica Neue,Arial,sans-serif;
+    position: relative
+}
+
+.navigation .navigation-link,.navigation .navigation-title,.navigation .title {
+    display: inline;
+    font-size: 1.6rem;
+    line-height: 5.2rem;
+    padding: 0;
+    text-decoration: none
+}
+
+.navigation .navigation-link.active {
+    color: #606c76
+}
+
+.container.main {
+    margin-top: 8rem
+}
+
+.title {
+    display: inline;
+    font-size: 1.6rem;
+    line-height: 5.2rem;
+    padding: 0;
+    text-decoration: none
+}
+
+.button {
+    width: 100%
+}
+
+#brightness, #first_param, #second_param {
+    display: none;
+}
+
+.noUi-target {
+    padding: 0 16px;
+}
+
+.noUi-connects {
+    margin: 0 -16px;
+    width: calc(100% + 34px);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.octocat {
+    border: 0;
+    color: #f4f5f6;
+    fill: #9b4dca;
+    height: 5.2rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 5.2rem;
+    z-index: 1
+}
+
+.octocat:hover .octocat-arm {
+    animation: b .56s infinite;
+    transform-origin: 13rem 10.6rem
+}
+
+.octocat .octocat-arm,.octocat .octocat-body {
+    fill: #f4f5f6
+}
+
+@keyframes b {
+    0%,50% {
+        transform: rotate(0)
+    }
+
+    25%,75% {
+        transform: rotate(-25deg)
+    }
+}
+
+.logo {
+    height: 2rem;
+    position: relative;
+    top: .3rem;
+}
+
+.label-margin {
+    margin-top: 26px;
+}
+
+.button {
+    margin-top: 2rem;
+}
+
+.range-margin {
+    margin-top: 14px;
+}
+
+.file {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 3.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.file input {
+    min-width: 14rem;
+    margin: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.file-custom {
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    height: 3.8rem;
+    padding: .6rem 1rem;;
+    color: #606c76;
+    background-color: #fff;
+    border: .1rem solid #d1d1d1;
+    border-radius: .4rem;
+    box-shadow: inset 0 .2rem .4rem rgba(0,0,0,.05);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.file-custom:after {
+    display: block;
+    width: calc(100% - 88px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    content: "Выберите файл...";
+}
+
+.file-custom.spiffs:after {
+    content: "Выберите SPIFFS...";
+}
+
+.file-custom.update:after {
+    content: "Выберите FLASH...";
+}
+
+.file-custom:before {
+    position: absolute;
+    top: -.075rem;
+    right: -.075rem;
+    bottom: -.075rem;
+    z-index: 6;
+    display: block;
+    content: "Выбрать";
+    padding: .5rem 1rem;
+    color: #606c76;
+    background-color: #f4f5f6;
+    border-left: .1rem solid #d1d1d1;
+    border-right: .1rem solid #d1d1d1;
+    border-radius: 0 .4rem .4rem 0;
+}
+
+.file input:focus ~ .file-custom {
+    box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
+}
+
+:focus {
+    outline: none!important;
+}
+
+.second-form {
+    padding-top: 10rem;
+}
